@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <div class="logo">
-                <a href="#home">&lt; AB /&gt;</a>
-            </div>
+    <div class="page-bg"></div>
+
+    <nav class="navbar">
+        <div class="container nav-inner">
+            <a href="#home" class="brand">&lt; AB /&gt;</a>
 
             <div class="nav-links">
                 <a href="#about">About</a>
@@ -25,243 +25,238 @@
 
     <main class="container">
         <section class="hero" id="home">
-            <div class="hero-wrap">
-                <div class="hero-text">
-                    <p class="eyebrow">Cybersecurity Student</p>
-                    <h1>Portfolio & University Work</h1>
-                    <p class="hero-copy">
-                        I document my academic projects, cybersecurity labs, and technical
-                        development in networking, Linux, system security, and web application security.
-                    </p>
+            <div class="hero-left">
+                <p class="eyebrow">Cybersecurity Student</p>
+                <h1>Building practical skills in security, Linux, and networking.</h1>
+                <p class="hero-text">
+                    I’m Anna Buczak, a cybersecurity student developing hands-on experience
+                    through academic work, technical labs, and project-based learning in
+                    network security, operating systems, and web application testing.
+                </p>
 
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="#" class="btn btn-secondary">Download CV</a>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+
+                <div class="hero-meta">
+                    <span>University of Essex Online</span>
+                    <span>BSc Cyber Security</span>
+                    <span>2024 – Present</span>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="hero-panel">
+                    <div class="panel-top">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="terminal-line"><span>$</span> focus --current</div>
+                        <div class="terminal-output">networking</div>
+                        <div class="terminal-output">linux security</div>
+                        <div class="terminal-output">web testing</div>
+                        <div class="terminal-output">technical reports</div>
                     </div>
                 </div>
 
-                <div class="hero-card">
-                    <h3>Current Focus</h3>
-
-                    <div class="mini-stat">
-                        <strong>University Work</strong>
-                        <span>Coursework, technical summaries, lab reports</span>
+                <div class="quick-cards">
+                    <div class="mini-card">
+                        <strong>Focus Areas</strong>
+                        <p>Linux, networking, web security</p>
                     </div>
-
-                    <div class="mini-stat">
-                        <strong>Technical Areas</strong>
-                        <span>Networking, Linux, security testing</span>
-                    </div>
-
-                    <div class="mini-stat">
-                        <strong>Portfolio Goal</strong>
-                        <span>Clear, professional presentation of practical growth</span>
+                    <div class="mini-card">
+                        <strong>Approach</strong>
+                        <p>Hands-on labs and structured learning</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about">
-            <h2>About</h2>
-            <p class="section-intro">
-                Building practical cybersecurity skills through coursework and lab work.
-            </p>
+        <section class="section" id="about">
+            <div class="section-heading">
+                <p class="section-label">About</p>
+                <h2>A practical portfolio built around steady technical growth.</h2>
+                <p class="section-copy">
+                    My goal is to document what I am learning in a clear and professional way,
+                    showing both academic development and practical cybersecurity work.
+                </p>
+            </div>
 
-            <div class="grid">
-                <div class="card">
+            <div class="about-grid">
+                <article class="card card-large">
                     <h3>Profile</h3>
                     <p>
-                        I am a cybersecurity student developing a portfolio that combines
-                        university work, practical labs, and technical projects.
+                        I am currently studying cybersecurity while building practical knowledge
+                        through lab work, system exploration, and security-focused technical projects.
                     </p>
-                </div>
+                </article>
 
-                <div class="card">
+                <article class="card">
                     <h3>Interests</h3>
-                    <p>
-                        My interests include networking, ethical hacking, Linux security,
-                        vulnerability analysis, and web application security.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>Focus</h3>
-                    <div class="tags">
-                        <span class="tag">Networking</span>
-                        <span class="tag">Linux</span>
-                        <span class="tag">Ethical Hacking</span>
-                        <span class="tag">Web Security</span>
+                    <div class="pill-wrap">
+                        <span class="pill">Networking</span>
+                        <span class="pill">Linux</span>
+                        <span class="pill">Ethical Hacking</span>
+                        <span class="pill">Web Security</span>
+                        <span class="pill">Security Analysis</span>
                     </div>
-                </div>
+                </article>
+
+                <article class="card">
+                    <h3>Current Direction</h3>
+                    <p>
+                        Developing stronger technical foundations in defensive and offensive
+                        security concepts, with emphasis on systems, traffic analysis, and testing.
+                    </p>
+                </article>
             </div>
         </section>
 
-        <section id="education">
-            <h2>Education</h2>
-            <p class="section-intro">
-                Cybersecurity Degree (In Progress)
-            </p>
+        <section class="section" id="education">
+            <div class="section-heading">
+                <p class="section-label">Education</p>
+                <h2>Areas I’m developing through coursework and labs.</h2>
+            </div>
 
-            <div class="grid">
-                <div class="card">
-                    <h3>Programming & Development</h3>
-                    <ul>
-                        <li>Learning programming fundamentals and object-oriented programming</li>
-                        <li>Writing structured and reusable code in Python</li>
-                        <li>Understanding variables, loops, functions, and classes</li>
-                    </ul>
-                </div>
+            <div class="education-grid">
+                <article class="card">
+                    <h3>Programming</h3>
+                    <p>Building confidence in Python, logic, reusable code, and problem solving.</p>
+                </article>
 
-                <div class="card">
+                <article class="card">
                     <h3>Networking</h3>
-                    <ul>
-                        <li>Understanding TCP/IP, DNS, and network communication</li>
-                        <li>Analysing traffic using tools like Wireshark</li>
-                        <li>Building a foundation for network security</li>
-                    </ul>
-                </div>
+                    <p>Understanding TCP/IP, DNS, traffic flow, and protocol analysis with Wireshark.</p>
+                </article>
 
-                <div class="card">
+                <article class="card">
                     <h3>Cybersecurity Foundations</h3>
-                    <ul>
-                        <li>Learning core security principles including the CIA triad</li>
-                        <li>Understanding common attacks and defensive concepts</li>
-                    </ul>
-                </div>
+                    <p>Learning key concepts including threats, risk, CIA triad, and secure practices.</p>
+                </article>
 
-                <div class="card">
-                    <h3>Ethical Hacking & Penetration Testing</h3>
-                    <ul>
-                        <li>Introduction to penetration testing methodologies</li>
-                        <li>Understanding how vulnerabilities are discovered and exploited</li>
-                    </ul>
-                </div>
+                <article class="card">
+                    <h3>Ethical Hacking</h3>
+                    <p>Exploring how vulnerabilities are identified, tested, and responsibly reported.</p>
+                </article>
 
-                <div class="card">
-                    <h3>Operating Systems Security</h3>
-                    <ul>
-                        <li>Learning system hardening and access control</li>
-                        <li>Exploring Linux security practices</li>
-                    </ul>
-                </div>
+                <article class="card">
+                    <h3>Operating Systems</h3>
+                    <p>Working with Linux, permissions, access control, and system hardening ideas.</p>
+                </article>
 
-                <div class="card">
-                    <h3>Academic Development</h3>
-                    <ul>
-                        <li>Writing technical summaries and lab reports</li>
-                        <li>Documenting practical learning and research</li>
-                    </ul>
-                </div>
+                <article class="card">
+                    <h3>Technical Writing</h3>
+                    <p>Documenting labs, summarising findings, and presenting technical work clearly.</p>
+                </article>
             </div>
         </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <p class="section-intro">
-                Selected labs and technical work.
-            </p>
+        <section class="section" id="projects">
+            <div class="section-heading">
+                <p class="section-label">Projects</p>
+                <h2>Selected technical work and lab-based learning.</h2>
+                <p class="section-copy">
+                    These projects show the areas I’m working on and how I apply what I’m learning.
+                </p>
+            </div>
 
-            <div class="grid">
-                <div class="card">
+            <div class="projects-grid">
+                <article class="project-card featured">
+                    <div class="project-number">01</div>
                     <h3>Network Traffic Analysis Lab</h3>
                     <p>
-                        Captured and analysed traffic using Wireshark to identify
-                        protocols and investigate anomalies.
+                        Analysed captured traffic to identify protocols, inspect communication
+                        patterns, and understand how network data can reveal anomalies.
                     </p>
-                    <div class="tags">
-                        <span class="tag">Wireshark</span>
-                        <span class="tag">Networking</span>
-                        <span class="tag">Analysis</span>
+                    <div class="pill-wrap">
+                        <span class="pill">Wireshark</span>
+                        <span class="pill">Networking</span>
+                        <span class="pill">Analysis</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/annabuczak" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                    </div>
-                </div>
+                </article>
 
-                <div class="card">
+                <article class="project-card">
+                    <div class="project-number">02</div>
                     <h3>Web Application Security Testing</h3>
                     <p>
-                        Tested for XSS and SQL injection vulnerabilities and documented
-                        findings with mitigation strategies.
+                        Explored common vulnerabilities such as XSS and SQL injection and
+                        documented the security implications of weak input handling.
                     </p>
-                    <div class="tags">
-                        <span class="tag">XSS</span>
-                        <span class="tag">SQL Injection</span>
-                        <span class="tag">Web Security</span>
+                    <div class="pill-wrap">
+                        <span class="pill">XSS</span>
+                        <span class="pill">SQL Injection</span>
+                        <span class="pill">Web Security</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/annabuczak" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                    </div>
-                </div>
+                </article>
 
-                <div class="card">
+                <article class="project-card">
+                    <div class="project-number">03</div>
                     <h3>Linux System Hardening</h3>
                     <p>
-                        Improved Linux system security through configuration changes
-                        and applied least privilege principles.
+                        Applied basic hardening concepts and configuration improvements to
+                        strengthen system security and reduce unnecessary exposure.
                     </p>
-                    <div class="tags">
-                        <span class="tag">Linux</span>
-                        <span class="tag">Hardening</span>
-                        <span class="tag">Security</span>
+                    <div class="pill-wrap">
+                        <span class="pill">Linux</span>
+                        <span class="pill">Hardening</span>
+                        <span class="pill">Security</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/annabuczak" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                    </div>
-                </div>
+                </article>
 
-                <div class="card">
+                <article class="project-card">
+                    <div class="project-number">04</div>
                     <h3>Password Security Research</h3>
                     <p>
-                        Researched authentication risks, attack methods, and stronger
-                        password security practices.
+                        Researched password attacks, authentication weaknesses, and stronger
+                        security practices for protecting user accounts.
                     </p>
-                    <div class="tags">
-                        <span class="tag">Authentication</span>
-                        <span class="tag">Research</span>
-                        <span class="tag">Security</span>
+                    <div class="pill-wrap">
+                        <span class="pill">Authentication</span>
+                        <span class="pill">Research</span>
+                        <span class="pill">Security</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/annabuczak" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="contact-box">
+                <div>
+                    <p class="section-label">Contact</p>
+                    <h2>Let’s connect.</h2>
+                    <p class="section-copy">
+                        Open to networking, learning opportunities, and cybersecurity-related roles.
+                    </p>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span>Email</span>
+                        <strong>your-email@example.com</strong>
+                    </div>
+                    <div class="contact-item">
+                        <span>GitHub</span>
+                        <strong>github.com/annabuczak</strong>
+                    </div>
+                    <div class="contact-item">
+                        <span>Portfolio</span>
+                        <strong>annabuczak.github.io</strong>
+                    </div>
+                    <div class="contact-item">
+                        <span>LinkedIn</span>
+                        <strong>add-your-link-here</strong>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p class="section-intro">
-                Open to connections, opportunities, and collaboration.
-            </p>
-
-            <div class="contact-card">
-                <div class="contact-grid">
-                    <div>
-                        <p><strong>GitHub</strong></p>
-                        <p><a href="https://github.com/annabuczak" target="_blank" rel="noopener noreferrer">github.com/annabuczak</a></p>
-                    </div>
-
-                    <div>
-                        <p><strong>Portfolio</strong></p>
-                        <p><a href="https://annabuczak.github.io/" target="_blank" rel="noopener noreferrer">annabuczak.github.io</a></p>
-                    </div>
-
-                    <div>
-                        <p><strong>Email</strong></p>
-                        <p>your-email@example.com</p>
-                    </div>
-
-                    <div>
-                        <p><strong>LinkedIn</strong></p>
-                        <p>add-your-link-here</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer>
+        <footer class="footer">
             <p>&lt; AB /&gt;</p>
-            <p>© 2026 Anna Buczak. All rights reserved.</p>
+            <p>© 2026 Anna Buczak</p>
         </footer>
     </main>
 </body>
